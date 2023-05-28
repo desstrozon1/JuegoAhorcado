@@ -1,4 +1,3 @@
-
 package juego_ahorcado;
 
 import org.junit.After;
@@ -9,32 +8,63 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
+ * Clase de prueba para la clase Ahorcado.
  *
- * @author desst
+ * <p>
+ * Esta clase contiene métodos de prueba para los métodos de la clase Ahorcado.
+ * Se utiliza el framework JUnit para realizar las pruebas.
+ *
+ * <p>
+ * Para ejecutar las pruebas, se debe ejecutar esta clase como un programa Java.
+ *
+ * <p>
+ * Ejemplo de uso:
+ * <pre>{@code
+ * Ahorcado ahorcado = new Ahorcado();
+ * // ...
+ * }</pre>
+ *
+ * @author desst Cano Martin Jesus Manuel
+ * @version 2.0
  */
 public class AhorcadoIT {
 
+    /**
+     * Constructor de la clase AhorcadoIT.
+     */
     public AhorcadoIT() {
     }
 
+    /**
+     * Método que se ejecuta antes de todas las pruebas.
+     */
     @BeforeClass
     public static void setUpClass() {
     }
 
+    /**
+     * Método que se ejecuta después de todas las pruebas.
+     */
     @AfterClass
     public static void tearDownClass() {
     }
 
+    /**
+     * Método que se ejecuta antes de cada prueba.
+     */
     @Before
     public void setUp() {
     }
 
+    /**
+     * Método que se ejecuta después de cada prueba.
+     */
     @After
     public void tearDown() {
     }
 
     /**
-     * Test of rellenarCaracteres method, of class Ahorcado.
+     * Prueba del método rellenarCaracteres() de la clase Ahorcado.
      */
     @Test
     public void testRellenarCaracteres_0args() {
@@ -49,7 +79,7 @@ public class AhorcadoIT {
     }
 
     /**
-     * Test of getArrayAhorcado method, of class Ahorcado.
+     * Prueba del método getArrayAhorcado() de la clase Ahorcado.
      */
     @Test
     public void testGetArrayAhorcado() {
@@ -63,7 +93,7 @@ public class AhorcadoIT {
     }
 
     /**
-     * Test of setArrayAhorcado method, of class Ahorcado.
+     * Prueba del método setArrayAhorcado() de la clase Ahorcado.
      */
     @Test
     public void testSetArrayAhorcado() {
@@ -77,7 +107,7 @@ public class AhorcadoIT {
     }
 
     /**
-     * Test of getNumeroAleatorio method, of class Ahorcado.
+     * Prueba del método getNumeroAleatorio() de la clase Ahorcado.
      */
     @Test
     public void testGetNumeroAleatorio() {
@@ -90,7 +120,7 @@ public class AhorcadoIT {
     }
 
     /**
-     * Test of setNumeroAleatorio method, of class Ahorcado.
+     * Prueba del método setNumeroAleatorio() de la clase Ahorcado.
      */
     @Test
     public void testSetNumeroAleatorio() {
@@ -104,7 +134,7 @@ public class AhorcadoIT {
     }
 
     /**
-     * Test of getAhorcado method, of class Ahorcado.
+     * Prueba del método getAhorcado() de la clase Ahorcado.
      */
     @Test
     public void testGetAhorcado() {
@@ -124,10 +154,10 @@ public class AhorcadoIT {
     //fail("The test case is a prototype.");
 
     /**
-     * Test of setAhorcado method, of class Ahorcado.
+     * Prueba del método setAhorcado() de la clase Ahorcado.
      */
     @Test
-    public void testSetAhorcado () {
+    public void testSetAhorcado() {
         System.out.println("setAhorcado");
         String ahorcadoString = "nuevaCadena";
         Ahorcado ahorcado = new Ahorcado();
@@ -138,7 +168,7 @@ public class AhorcadoIT {
     }
 
     /**
-     * Test of rellenarCaracteres method, of class Ahorcado.
+     * Prueba del método rellenarCaracteres(int, String) de la clase Ahorcado.
      */
     @Test
     public void testRellenarCaracteres_int_String() {
