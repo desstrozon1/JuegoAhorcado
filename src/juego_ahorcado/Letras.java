@@ -13,6 +13,12 @@ package juego_ahorcado;
 public class Letras {
 
     /**
+     *Constructor creado para la clase letras
+     */
+    public Letras() {
+    }
+
+    /**
      * Comprueba si el jugador ha alcanzado el número máximo de errores y
      * muestra el mensaje correspondiente.
      *
@@ -29,11 +35,12 @@ public class Letras {
     }
 
     /**
-     * Comprueba si el jugador ha alcanzado el número máximo de errores y
-     * muestra el mensaje correspondiente.
+     * Compruebo que una cadena es igual a la otra cadena
      *
-     * @param errores el número de errores cometidos por el jugador
+     * @param cadenaAciertos la cadena del usuario
      * @param cadena la palabra correcta que se estaba buscando
+     * @return retornamos true si las cadenas son iguales
+     *
      */
     public static boolean aciertosLetras(String cadenaAciertos, String cadena) {
         if (cadenaAciertos.equals(cadena)) {

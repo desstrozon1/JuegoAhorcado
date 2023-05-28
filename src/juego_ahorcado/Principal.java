@@ -18,13 +18,19 @@ import static juego_ahorcado.Letras.erroresLetra;
  */
 public class Principal extends Letras {
 
+    
+    /**
+     * Constructor de la clase principal.
+     */
+    public Principal() {
+    }
+    
+    /**
+     * Método principal que inicia el juego del ahorcado.
+     *
+     * @param args los argumentos de la línea de comandos (no se utilizan)
+     */
     public static void main(String[] args) {
-
-        /**
-         * Método principal que inicia el juego del ahorcado.
-         *
-         * @param args los argumentos de la línea de comandos (no se utilizan)
-         */
         Scanner scanner = new Scanner(System.in);
 
         Ahorcado clase_Ahorcado = new Ahorcado();
