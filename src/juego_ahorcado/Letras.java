@@ -13,7 +13,9 @@ package juego_ahorcado;
 public class Letras {
 
     /**
-     *Constructor creado para la clase letras
+     * Constructor creado para la clase letras
+     *
+     *
      */
     public Letras() {
     }
@@ -24,6 +26,10 @@ public class Letras {
      *
      * @param errores el número de errores cometidos por el jugador
      * @param cadena la palabra correcta que se estaba buscando
+     * <code>errores permitidos son 7</code> La función para los errores
+     * permitidos.
+     *
+     *
      */
     public static void erroresLetra(int errores, String cadena) {
         if (errores == 7) {
@@ -41,6 +47,7 @@ public class Letras {
      * @param cadena la palabra correcta que se estaba buscando
      * @return retornamos true si las cadenas son iguales
      *
+     * @see aciertosLetras(String cadenaAciertos, String cadena)
      */
     public static boolean aciertosLetras(String cadenaAciertos, String cadena) {
         if (cadenaAciertos.equals(cadena)) {
@@ -57,6 +64,8 @@ public class Letras {
      * @param letra la letra a buscar
      * @param caracteres el arreglo de caracteres que representa la cadena de
      * aciertos
+     *
+     * @see buscarLetra(String cadena, String letra, char[] caracteres)
      */
     public static void buscarLetra(String cadena, String letra, char[] caracteres) {
         //colocamos la letra acertada en la variable cadenaAciertos

@@ -24,15 +24,6 @@ import java.util.Random;
  * Para jugar al ahorcado, se deben crear instancias de esta clase y llamar a
  * sus métodos correspondientes.
  *
- * <p>
- * Ejemplo de uso:
- * <pre>{@code
- * Ahorcado juego = new Ahorcado();
- * String palabraOculta = juego.getAhorcado();
- * String cadenaAciertos = juego.rellenarCaracteres();
- * // ...
- * }</pre>
- *
  * @author desst Cano Martin Jesus Manuel
  * @version 2.0
  */
@@ -88,6 +79,8 @@ public class Ahorcado {
      * Rellena los caracteres de la palabra oculta con el caracter de relleno.
      *
      * @return la cadena con los caracteres rellenos
+     * 
+     * @see rellenarCaracteres()
      */
     public String rellenarCaracteres() {
         StringBuilder cadena = new StringBuilder();
@@ -100,7 +93,8 @@ public class Ahorcado {
     /**
      * Obtiene el conjunto de palabras para el juego del ahorcado.
      *
-     * @return el conjunto de palabras
+     * @return devuelve el conjunto de palabras del array
+     * 
      */
     public String[] getArrayAhorcado() {
         return arrayAhorcado;
@@ -110,6 +104,7 @@ public class Ahorcado {
      * Establece el conjunto de palabras para el juego del ahorcado.
      *
      * @param arrayAhorcado el nuevo conjunto de palabras
+     * 
      */
     public void setArrayAhorcado(String[] arrayAhorcado) {
         this.arrayAhorcado = arrayAhorcado;
@@ -119,6 +114,7 @@ public class Ahorcado {
      * Obtiene la palabra oculta seleccionada para el juego.
      *
      * @return la palabra oculta
+     * 
      */
     public String getAhorcado() {
         return ahorcado;
@@ -128,6 +124,7 @@ public class Ahorcado {
      * Establece la palabra oculta para el juego.
      *
      * @param ahorcado la nueva palabra oculta
+     * 
      */
     public void setAhorcado(String ahorcado) {
         this.ahorcado = ahorcado;
@@ -137,7 +134,8 @@ public class Ahorcado {
      * Obtiene el índice aleatorio utilizado para seleccionar una palabra del
      * conjunto.
      *
-     * @return el índice aleatorio
+     * @return devuelve una palabra aleatoriamente
+     * 
      */
     public int getNumeroAleatorio() {
         return numeroAleatorio;
@@ -148,6 +146,7 @@ public class Ahorcado {
      * conjunto.
      *
      * @param numeroAleatorio el nuevo índice aleatorio
+     * 
      */
     public void setNumeroAleatorio(int numeroAleatorio) {
         this.numeroAleatorio = numeroAleatorio;
@@ -157,6 +156,8 @@ public class Ahorcado {
      * Genera una representación en forma de cadena del estado del juego.
      *
      * @return la representación en forma de cadena del estado del juego
+     * 
+     * @see String toString()
      */
     @Override
     public String toString() {

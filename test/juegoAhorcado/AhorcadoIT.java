@@ -1,5 +1,6 @@
-package juego_ahorcado;
+package juegoAhorcado;
 
+import juego_ahorcado.Ahorcado;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

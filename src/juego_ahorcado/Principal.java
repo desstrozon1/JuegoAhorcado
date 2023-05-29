@@ -12,15 +12,25 @@ import static juego_ahorcado.Letras.erroresLetra;
 /**
  * Clase Principal que representa la clase principal del juego ahorcado.
  * Extiende la clase Letras para utilizar sus métodos.
- *
+ 
  * @author desst Cano Martin Jesus Manuel
  * @version 2.0
+ */
+/**
+ **<ul>
+ * <li>Juego del Ahorcado</li>
+ * <li>Tiene que adivinar la letra oculta escogida al azar</li>
+ * <li>Tienes 7 oportunidades para adivinar la letra oculta</li>
+ * <li>Si fallas los 7 intentos tendras que volver a empezar y será otra palabra distinta</li>
+ * </ul> 
  */
 public class Principal extends Letras {
 
     
     /**
      * Constructor de la clase principal.
+     * 
+     * @see Principal principal de la clase
      */
     public Principal() {
     }
